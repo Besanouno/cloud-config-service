@@ -1,0 +1,67 @@
+server:
+  port: 8888
+spring:
+  application.name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:Besanouno/demo-properties.git
+          ignore-local-ssh-settings: true
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            Proc-Type: 4,ENCRYPTED
+            DEK-Info: AES-128-CBC,BBBF1F2685E6C07ED098396B566B9BE0
+
+            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
+            -----END RSA PRIVATE KEY-----
+
+          passphrase: Mm181386
